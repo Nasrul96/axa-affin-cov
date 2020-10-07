@@ -1,0 +1,319 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.containerWrapper{
+  background-color: whitesmoke;
+}
+.containerData{
+  padding:1% !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.backgroundTop{
+  background-image: url('assets/axa-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 430px;
+  border-bottom: 25px solid #76bed6;
+  border-radius: 0px 0px 300px 0px;
+}
+
+.logoTop{
+  width: 80px;
+  margin-left:5%;
+  display: inline-block;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 10px 10px;
+}
+
+.relativeWrapper{
+  position: relative;
+}
+.countryFlag{
+  width: 50px;
+  height: 50px;
+  animation: moving 2s infinite;
+  position: absolute;
+  right:31%;
+  top:5%;
+}
+@keyframes moving {
+  0%   {top:5%;}
+  50% {top:16%;}
+  100% {top:5%;}
+}
+
+.totalCases{
+  background-color: white;
+  background-color:white;
+  border-radius:10px;
+  box-shadow: 
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 11.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 40px 40px rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  padding:20px;
+  margin-top:10px;
+  width: 100%;
+  border-top: 10px #76bed6 solid;
+}
+
+.totalCases:hover{
+  border-top: 10px #21a1cf solid;
+}
+
+.inlineText{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.halfWidth{
+  width:90% ;
+  display: block;
+}
+
+.centerAlign{
+  text-align: center;
+  margin-left:6%;
+}
+/* .contentWrapper{
+  background-color: #15A7D8;
+  padding-bottom:5%;
+} */
+
+.titleName{
+  text-align: center;
+  padding-top:10px;
+  font-weight: 200;
+  color: #15A7D8; 
+}
+.textCenter{
+  text-align: center;
+  color:#21a1cf;
+  font-weight: 200;
+}
+.activeCasesBox{
+  background-color:white;
+  border-radius:10px;
+  box-shadow: 
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  display:inline-block;
+  margin-left:2%;
+  width:20.5%;
+  margin-top:1%;
+  padding:30px;
+  border-top: 10px #76bed6 solid;
+}
+.activeCasesBox:hover{
+  border-top: 10px #21a1cf solid;
+}
+
+.contentTitle{
+  color: #15A7D8; 
+  text-align: center;
+  font-weight: 200;
+  margin-top:40px;
+  z-index: 99999;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.bar-group .name-label {
+  text-anchor: end;
+  font-weight: 300;
+  font-size: 13px;
+  fill: #333;
+}
+
+.bar-group .value-label {
+  text-anchor: end;
+  fill: #fff;
+  font-weight: 900;
+  font-size: 10px;
+}
+
+.container .bar-group {
+  transition: opacity 0.3s;
+}
+
+/* Fade bars when the chart is hovered */
+.container:hover .bar-group {
+  opacity: 0.3;
+}
+
+/* But don't fade the hovered bar... */
+.container .bar-group:hover {
+  opacity: 1;
+}
+
+.container .bar-group:hover .name-label {
+  font-weight: 400;
+}
+
+.container .bar-group:hover .value-label {
+  font-size: 12px;
+}
+
+.loaderContainer{
+text-align: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 150px;
+  height: 150px;
+  margin-top:15%;
+  margin-left:43%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  box-shadow: 
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 8.5px 10px rgba(0, 0, 0, 0.06),
+  0 7.3px 9.9px rgba(0, 0, 0, 0.072),
+  0 8.8px 23.4px rgba(0, 0, 0, 0.086),
+  0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer{
+  background-color:#505050 ;
+  height: 20px;
+  margin-top:80px;
+  padding: 1%;
+  padding-left:3%;
+  padding-bottom:2%;
+  color:white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.MultipleAxisChart{
+  display: inline-block;
+  width: 45%;
+}
+
+@media only screen and (max-width: 800px) {
+  .backgroundTop {
+    background-image: url(/static/media/axa-bg.9c2e903f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    border-bottom: 25px solid #76bed6;
+    border-radius: 0 0px 160px;
+}
+  .activeCasesBox{
+    background-color:white;
+    border-radius:10px;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    display:inline-block;
+    margin-left:4%;
+    margin-right: 4%;
+    width:90%;
+    margin-top:5%;
+    padding:20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width:801px){
+  .backgroundTop {
+    background-image: url(/static/media/axa-bg.9c2e903f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    border-bottom: 25px solid #76bed6;
+    border-radius: 0 0px 160px;
+}
+  .activeCasesBox{
+    background-color:white;
+    border-radius:10px;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    display:inline-block;
+    margin-left:4%;
+    margin-right: 4%;
+    width:40%;
+    margin-top:5%;
+    padding:20px;
+  }
+}
